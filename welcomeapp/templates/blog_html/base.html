@@ -1,24 +1,19 @@
 {% load static %}
-
 <html>
-
-
     <head>
-        <title>Otabek blog</title>
-<!--        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">-->
-<!--        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">-->
-<!--        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>-->
-<!--        <link rel="stylesheet" href="{% static 'css/blog.css' %}">-->
-            <link rel="stylesheet" href="{% static 'stayl.css' %}" >
+        <title>Hashtags</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
         <div class="page-header">
-            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
             {% if user.is_authenticated %}
-                 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+                <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+                <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-pencil"></span></a>
             {% endif %}
-            <a class="link" href="https://t.me/OTABEKH174">@OTABEKH174</a>
-            <h1><a href="/">Otabek Olimjonov</a></h1>
+            <h1><a href="/">Hashtags programming</a></h1>
         </div>
         <div class="content container">
             <div class="row">
